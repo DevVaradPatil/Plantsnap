@@ -24,8 +24,15 @@ npm install
 npm start       # http://localhost:3000
 ```
 
-Get a free API key at [my.plantnet.org](https://my.plantnet.org/) and set `PLANTNET_API_KEY` in
-`src/components/MainBody.js`.
+Get a free API key at [my.plantnet.org](https://my.plantnet.org/), then copy `.env.example` to
+`.env` and fill it in:
+
+```env
+REACT_APP_PLANTNET_API_KEY=your-key
+```
+
+CRA embeds `REACT_APP_*` values in the built JavaScript, so the key is visible to anyone using the
+site. Restrict it to your domain in the Pl@ntNet dashboard.
 
 To deploy:
 

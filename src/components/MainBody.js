@@ -6,7 +6,7 @@ import "../styles/mainbody.css";
 import { AiOutlineArrowUp, AiOutlineSend } from "react-icons/ai";
 
 export default function MainBody() {
-  const PLANTNET_API_KEY = "2b10NzJRKkou59RR7f3b46jgWe";
+  const PLANTNET_API_KEY = process.env.REACT_APP_PLANTNET_API_KEY;
   const [uploadFile, setUploadFile] = useState();
   const [organ, setOrgan] = useState();
   const [results, setResults] = useState([{}]);
